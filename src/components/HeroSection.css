@@ -18,7 +18,7 @@ video {
   object-fit: contain;
 }
 
-.hero-container > h1 {
+.hero-container > h2 {
   color: #fff;
   font-size: 100px;
   margin-top: -100px;
@@ -28,6 +28,11 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
+  align-content: center;
+  display: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
