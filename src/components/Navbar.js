@@ -31,12 +31,12 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          
+          <Marquee>
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               {/* <i class='fab fa-house' /> */}
               Welcome to rent to own houses we guarrantee you quality service
             </Link>
-         
+            </Marquee>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
