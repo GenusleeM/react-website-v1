@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
-import { Button } from "./Button";
+import { Link, Typography } from "@material-ui/core";
+// import { Button } from "./Button";
 import "./HeroSection.css";
+import Button from '@mui/material/Button';
 
 function HeroSection() {
   return (
@@ -14,13 +15,22 @@ function HeroSection() {
         Affordable Rent To Own Homes in your area
       </p>
       <div className="hero-btns">
+        {/* <Link href="fanset.net" target="_blank" className='btn-mobile'>
         <Button
+        
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
           GET STARTED <i className="far fa-play-circle" />
         </Button>
+        </Link> */}
+
+        <Link color="inherit" href="https://afflat3d2.com/trk/lnk/E1383734-63DF-4D36-AA4D-A6679454370C/?o=9520&c=918277&a=597982&k=7B1DBE46FFDA7DBFEB38B8BF6E91EE6B&l=9052" target="_blank">
+          <button className="mybutton">
+          GET STARTED <i className="far fa-play-circle" />
+          </button>
+        </Link>
       </div>
     </div>
   );

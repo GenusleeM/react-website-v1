@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Marquee from "react-fast-marquee";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,40 +31,22 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            HOME
-            {/* <i class='fab fa-house' /> */}
-            <FontAwesomeIcon icon={faHome} />
-          </Link>
+          
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              {/* <i class='fab fa-house' /> */}
+              Welcome to rent to own houses we guarrantee you quality service
+            </Link>
+         
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          {/* <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="/services"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-            </li>
-
-          </ul>
+          </ul> */}
           {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}
         </div>
       </nav>
@@ -72,6 +55,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
