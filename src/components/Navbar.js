@@ -34,7 +34,7 @@ function Navbar() {
           
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               {/* <i class='fab fa-house' /> */}
-              Welcome to rent to own houses we guarrantee you quality service
+              Theee Wiseman Abraham
             </Link>
            
           <div className="menu-icon" onClick={handleClick}>
